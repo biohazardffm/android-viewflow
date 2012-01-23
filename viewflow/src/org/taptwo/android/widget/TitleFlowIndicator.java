@@ -311,7 +311,6 @@ public class TitleFlowIndicator extends TextView implements FlowIndicator {
 	 * @see org.taptwo.android.widget.FlowIndicator#onScrolled(int, int, int,
 	 * int)
 	 */
-	@Override
 	public void onScrolled(int h, int v, int oldh, int oldv) {
 		currentScroll = h;
 		invalidate();
@@ -324,7 +323,6 @@ public class TitleFlowIndicator extends TextView implements FlowIndicator {
 	 * org.taptwo.android.widget.ViewFlow.ViewSwitchListener#onSwitched(android
 	 * .view.View, int)
 	 */
-	@Override
 	public void onSwitched(View view, int position) {
 		currentPosition = position;
 		invalidate();
@@ -337,7 +335,6 @@ public class TitleFlowIndicator extends TextView implements FlowIndicator {
 	 * org.taptwo.android.widget.FlowIndicator#setViewFlow(org.taptwo.android
 	 * .widget.ViewFlow)
 	 */
-	@Override
 	public void setViewFlow(ViewFlow view) {
 		viewFlow = view;
 		invalidate();

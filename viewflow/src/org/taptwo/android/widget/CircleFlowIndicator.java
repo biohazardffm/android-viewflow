@@ -26,8 +26,8 @@ import android.os.AsyncTask;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.view.animation.Animation.AnimationListener;
+import android.view.animation.AnimationUtils;
 
 /**
  * A FlowIndicator which draws circles (one for each view). 
@@ -188,7 +188,6 @@ public class CircleFlowIndicator extends View implements FlowIndicator,
 	 * org.taptwo.android.widget.ViewFlow.ViewSwitchListener#onSwitched(android
 	 * .view.View, int)
 	 */
-	@Override
 	public void onSwitched(View view, int position) {
 	}
 
@@ -199,7 +198,6 @@ public class CircleFlowIndicator extends View implements FlowIndicator,
 	 * org.taptwo.android.widget.FlowIndicator#setViewFlow(org.taptwo.android
 	 * .widget.ViewFlow)
 	 */
-	@Override
 	public void setViewFlow(ViewFlow view) {
 		resetTimer();
 		viewFlow = view;
@@ -213,7 +211,6 @@ public class CircleFlowIndicator extends View implements FlowIndicator,
 	 * @see org.taptwo.android.widget.FlowIndicator#onScrolled(int, int, int,
 	 * int)
 	 */
-	@Override
 	public void onScrolled(int h, int v, int oldh, int oldv) {
 		setVisibility(View.VISIBLE);
 		resetTimer();
@@ -379,16 +376,13 @@ public class CircleFlowIndicator extends View implements FlowIndicator,
 		}
 	}
 
-	@Override
 	public void onAnimationEnd(Animation animation) {
 		setVisibility(View.GONE);
 	}
 
-	@Override
 	public void onAnimationRepeat(Animation animation) {
 	}
 
-	@Override
 	public void onAnimationStart(Animation animation) {
 	}
 }
